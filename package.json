@@ -12,7 +12,7 @@
   ],
   "engines": {
     "npm": "use yarn instead",
-    "yarn": "4.1.0"
+    "yarn": "^4.0.0"
   },
   "scripts": {
     "build:ts": "rimraf build && npx tsc && node ./scripts/copySrc.js && yarn correct",
@@ -123,5 +123,5 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.2.1"
 }
