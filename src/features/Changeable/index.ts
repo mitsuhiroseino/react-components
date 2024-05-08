@@ -1,2 +1,2 @@
-export { default as Changeable, default } from './Changeable';
+export { default } from './Changeable';
 export type * from './types';

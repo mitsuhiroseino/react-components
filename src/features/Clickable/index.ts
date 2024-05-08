@@ -1,2 +1,2 @@
-export { default as Clickable, default } from './Clickable';
+export { default } from './Clickable';
 export type * from './types';
