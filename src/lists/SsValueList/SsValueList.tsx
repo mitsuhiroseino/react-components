@@ -2,7 +2,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import useOptions from '@visue/react-core/hooks/useOptions';
 import clsx from 'clsx';
 import noop from 'lodash/noop';
-import { Attributes, ForwardedRef, forwardRef, useMemo } from 'react';
+import { ForwardedRef, forwardRef, useMemo } from 'react';
 
 import SsBlankIcon from '../../icons/SsBlankIcon';
 import SsList from '../SsList';

@@ -18,16 +18,11 @@
     "build:ts": "rimraf build && npx tsc && node ./scripts/copySrc.js && yarn correct",
     "correct": "node ./scripts/correctMapSource.js",
     "build": "rimraf build && rollup --config",
-    "prepublish": "rimraf build && rollup --config",
     "start:rollup": "rimraf build && rollup --config --watch",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,sass,html,json}\"",
-    "format-c": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,sass,html,json}\" --config ./.prettierrc.cleanup.js",
-    "publish:public": "yarn build && cd ./build && npm publish --access=public",
+    "optimize": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,sass,html,json}\" --config ./.prettierrc.cleanup.js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "indexes": "node ./scripts/indexes.js",
-    "pub": "yarn build && node ./scripts/pub.js",
-    "inst": "node ./scripts/inst.js"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@babel/runtime": "^7.22.5",
