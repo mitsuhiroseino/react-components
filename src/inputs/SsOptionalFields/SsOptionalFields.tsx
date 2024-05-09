@@ -8,7 +8,6 @@ import cloneDeep from 'lodash/cloneDeep';
 import isFunction from 'lodash/isFunction';
 import noop from 'lodash/noop';
 import { ForwardedRef, forwardRef, useCallback, useMemo } from 'react';
-import useValues from '../../hooks/useValues';
 import { CLASS_NAME, DISPLAY_NAME } from './constants';
 import { SsOptionalFieldInputProps, SsOptionalFieldsProps } from './types';
 
@@ -27,7 +26,7 @@ const DefaultRemoveButton = (props: IconButtonProps) => (
 
 const SsOptionalFields = forwardRef(
   <V, P extends SsOptionalFieldInputProps = SsOptionalFieldInputProps>(
-    props: SsOptionalFieldsProps,
+    props: SsOptionalFieldsProps<V, P>,
     ref: ForwardedRef<HTMLDivElement>,
   ) => {
     const {
@@ -45,7 +44,7 @@ const SsOptionalFields = forwardRef(
       onRemove = noop,
       onChange = noop,
       ...rest
-    } = useValues(props);
+    } = props;
     // 入力コンポーネントの追加処理
     const handleAdd = useCallback(() => {
       const newValues = clone(values);

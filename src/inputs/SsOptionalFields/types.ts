@@ -1,7 +1,6 @@
 import { StackProps } from '@mui/material/Stack';
 import { ReactComponent } from '@visue/react-core/components';
 import { ReactNode } from 'react';
-import HasValues from '../../features/HasValues';
 
 export type SsOptionalFieldInputProps<V = any> = {
   /**
@@ -34,54 +33,55 @@ export type SsOptionalFieldInputProps<V = any> = {
 export type SsOptionalFieldsProps<
   V = any,
   P extends SsOptionalFieldInputProps<V> = SsOptionalFieldInputProps<V>,
-> = Omit<StackProps, 'onChange'> &
-  HasValues<V> & {
-    /**
-     * 項目追加時の初期値
-     */
-    initialValue?: V;
+> = Omit<StackProps, 'onChange'> & {
+  values: V[];
 
-    /**
-     * 入力コンポーネント
-     * renderInputが設定されている場合は無効
-     */
-    InputComponent?: ReactComponent;
+  /**
+   * 項目追加時の初期値
+   */
+  initialValue?: V;
 
-    /**
-     * 入力コンポーネントを描画する関数
-     * index毎に表示するこん
-     *
-     * @param props プロパティ
-     * @param index インデックス
-     * @returns
-     */
-    renderInput?: (props: P, index: number) => ReactNode;
+  /**
+   * 入力コンポーネント
+   * renderInputが設定されている場合は無効
+   */
+  InputComponent?: ReactComponent;
 
-    /**
-     * 全入力コンポーネント共通のプロパティ
-     */
-    defaultInputProps?: Partial<P> | ((value: V, index: number) => Partial<P>);
+  /**
+   * 入力コンポーネントを描画する関数
+   * index毎に表示するこん
+   *
+   * @param props プロパティ
+   * @param index インデックス
+   * @returns
+   */
+  renderInput?: (props: Partial<P>, index: number) => ReactNode;
 
-    /**
-     * 追加ボタンのコンポーネント
-     */
-    AddButton?: ReactComponent;
+  /**
+   * 全入力コンポーネント共通のプロパティ
+   */
+  defaultInputProps?: Partial<P> | ((value: V, index: number) => Partial<P>);
 
-    /**
-     * 削除ボタンのコンポーネント
-     */
-    RemoveButton?: ReactComponent;
+  /**
+   * 追加ボタンのコンポーネント
+   */
+  AddButton?: ReactComponent;
 
-    /**
-     * 項目の追加・削除不可
-     */
-    disableModify?: boolean;
+  /**
+   * 削除ボタンのコンポーネント
+   */
+  RemoveButton?: ReactComponent;
 
-    onAdd?: (value: V[]) => void;
+  /**
+   * 項目の追加・削除不可
+   */
+  disableModify?: boolean;
 
-    onBeforeRemove?: (value: V[], index: number) => Promise<boolean>;
+  onAdd?: (value: V[]) => void;
 
-    onRemove?: (value: V[], index: number) => void;
+  onBeforeRemove?: (value: V[], index: number) => Promise<boolean>;
 
-    onChange?: (value: V[], index: number) => void;
-  };
+  onRemove?: (value: V[], index: number) => void;
+
+  onChange?: (value: V[], index: number) => void;
+};

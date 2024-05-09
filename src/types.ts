@@ -1,5 +1,4 @@
 import { CSSProperties } from 'react';
-import { Feature } from './features';
 
 /**
  * 全コンポーネント共通のプロパティ
@@ -14,12 +13,7 @@ export type SsRenderableCompProps = SsCompProps & { id?: string; className?: str
 /**
  * コンポーネントの機能の定義
  */
-export type Schema<P> = SchemaConfig<P> & {
-  /**
-   * コンポーネントの依存する機能のマップ
-   */
-  featureMap?: { [name: string]: Feature<unknown> };
-};
+export type Schema<P> = SchemaConfig<P> & {};
 
 /**
  * コンポーネントの定義の設定
@@ -34,11 +28,6 @@ export type SchemaConfig<P> = {
    * コンポーネント種別
    */
   type: string;
-
-  /**
-   * コンポーネントの依存する機能
-   */
-  features?: { [name: string]: Feature<any> };
 
   /**
    * コンポーネントが持つプロパティ

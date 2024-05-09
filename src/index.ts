@@ -3,7 +3,6 @@ export * as buttons from './buttons';
 export * as components from './components';
 export * as containers from './containers';
 export * as displays from './displays';
-export * as features from './features';
 export * as files from './files';
 export * as forms from './forms';
 export * as gmaps from './gmaps';
