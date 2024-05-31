@@ -15,7 +15,7 @@ const INPUT = './src/index.ts',
   OUTPUT_CJS = OUTPUT,
   OUTPUT_ESM = OUTPUT,
   BABEL_CONFIG_PATH = path.resolve('babel.config.js'),
-  TSCONFIG_PATH = path.resolve('tsconfig.build.json');
+  TSCONFIG_PATH = path.resolve('tsconfig.json');
 
 // commonjs用とesmodule用のソースを出力する
 const config = [
