@@ -1,5 +1,5 @@
-import formatDate from '@visue/core/utils/date/format';
 import useForwardedRef from '@visue/react-core/hooks/useForwardedRef';
+import formatDate from '@visue/utils/date/format';
 import pollFunction from '@visue/web-core/utils/function/pollFunction';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, useEffect } from 'react';

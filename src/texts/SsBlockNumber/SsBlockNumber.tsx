@@ -1,6 +1,6 @@
-import formatNumber from '@visue/core/utils/number/format';
 import useForwardedRef from '@visue/react-core/hooks/useForwardedRef';
 import useNumberAnimation from '@visue/react-core/hooks/useNumberAnimation';
+import formatNumber from '@visue/utils/number/format';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, useMemo } from 'react';
 

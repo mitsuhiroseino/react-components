@@ -1,6 +1,6 @@
-import getGeoPathByRatio from '@visue/core/utils/geo/getGeoPathByRatio';
-import getGeoPointByRatio from '@visue/core/utils/geo/getGeoPointByRatio';
 import useValueAnimation, { UseValueAnimationState } from '@visue/react-core/hooks/useValueAnimation';
+import getGeoPathByRatio from '@visue/utils/geo/getGeoPathByRatio';
+import getGeoPointByRatio from '@visue/utils/geo/getGeoPointByRatio';
 import { useMemo } from 'react';
 
 import { UsePathAnimationOptions } from './types';

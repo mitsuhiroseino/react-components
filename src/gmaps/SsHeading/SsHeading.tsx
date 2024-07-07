@@ -1,9 +1,9 @@
-import clamp, { CORRECTION_TYPE } from '@visue/core/utils/number/clamp';
 import useForwardedRef from '@visue/react-core/hooks/useForwardedRef';
 import useValueAnimation, {
   UseValueAnimationOptions,
   UseValueAnimationState,
 } from '@visue/react-core/hooks/useValueAnimation';
+import clamp, { CLAMP_MODE } from '@visue/utils/number/clamp';
 import isString from 'lodash/isString';
 import { ForwardedRef, forwardRef, useCallback, useMemo } from 'react';
 
@@ -25,7 +25,8 @@ const DEFAULT_ICON: google.maps.Symbol = {
     const { initialValue = 0 } = options,
       diff = value - initialValue,
       newRotation = clamp(initialValue + diff * state.progress, 0, 360, {
-        correctionType: CORRECTION_TYPE.LOOP,
+        minClampMode: CLAMP_MODE.WRAP,
+        maxClampMode: CLAMP_MODE.WRAP,
       });
     return newRotation;
   },

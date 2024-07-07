@@ -5283,10 +5283,10 @@ __metadata:
     "@types/react": "npm:^18.0.0"
     "@types/react-dom": "npm:^18.0.0"
     "@types/react-virtualized": "npm:^9.21.21"
-    "@visue/core": "npm:^0.1.0"
     "@visue/dev": "npm:^0.1.0"
     "@visue/migration": "npm:^0.1.0"
     "@visue/react-core": "npm:^0.1.0"
+    "@visue/utils": "npm:^0.1.1"
     "@visue/web-core": "npm:^0.1.0"
     animejs: "npm:^3.2.1"
     babel-loader: "npm:^9.0.0"
@@ -5348,6 +5348,22 @@ __metadata:
     react: "npm:^18.2.0"
     react-redux: "npm:^8.1.1"
   checksum: 10c0/ab5c847aeb845da35b845e40cba4e243a6ecf8f7ec32e195a6454530614250e6ab2ca5c3c5a1e9e988b0a36716460456342c005ae5139a684967566e6b685829
+  languageName: node
+  linkType: hard
+
+"@visue/utils@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@visue/utils@npm:0.1.1"
+  dependencies:
+    bignumber.js: "npm:^9.1.1"
+    date-fns: "npm:^2.29.3"
+    geolib: "npm:^3.3.4"
+    iconv-lite: "npm:^0.6.3"
+    jsesc: "npm:^3.0.2"
+    lodash: "npm:^4.17.21"
+    nanoid: "npm:^4.0.1"
+    uuid: "npm:^10.0.0"
+  checksum: 10c0/57558e1b0b9dd3f77d8e733d93a33ed9c4b7cc284109c73a16cf1c8705af83e2791ddd82e89e7e50ba4b8afabaa1f49aa897dcefda72b9788d087c8dbfaf356b
   languageName: node
   linkType: hard
 
@@ -10764,6 +10780,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsesc@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "jsesc@npm:3.0.2"
+  bin:
+    jsesc: bin/jsesc
+  checksum: 10c0/ef22148f9e793180b14d8a145ee6f9f60f301abf443288117b4b6c53d0ecd58354898dc506ccbb553a5f7827965cd38bc5fb726575aae93c5e8915e2de8290e1
+  languageName: node
+  linkType: hard
+
 "jsesc@npm:~0.5.0":
   version: 0.5.0
   resolution: "jsesc@npm:0.5.0"
@@ -15858,6 +15883,15 @@ __metadata:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: 10c0/02ba649de1b7ca8854bfe20a82f1dfbdda3fb57a22ab4a8972a63a34553cf7aa51bc9081cf7e001b035b88186d23689d69e71b510e610a09a4c66f68aa95b672
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "uuid@npm:10.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 10c0/eab18c27fe4ab9fb9709a5d5f40119b45f2ec8314f8d4cf12ce27e4c6f4ffa4a6321dc7db6c515068fa373c075b49691ba969f0010bf37f44c37ca40cd6bf7fe
   languageName: node
   linkType: hard
 

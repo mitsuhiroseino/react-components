@@ -1,5 +1,5 @@
-import asArray from '@visue/core/utils/array/asArray';
 import useRefs from '@visue/react-core/hooks/useRefs';
+import asArray from '@visue/utils/array/asArray';
 import { forwardRef, useMemo } from 'react';
 
 import SsCircle from '../SsCircle';

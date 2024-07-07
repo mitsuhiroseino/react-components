@@ -1,4 +1,4 @@
-import { FormatOptions } from '@visue/core/utils/date/format';
+import { FormatOptions } from '@visue/utils/date/format';
 import { PollFunctionOptions } from '@visue/web-core/utils/function/pollFunction';
 
 import { SsTypographyProps } from '../SsTypography';

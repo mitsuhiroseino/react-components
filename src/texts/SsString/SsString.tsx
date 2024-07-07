@@ -1,5 +1,5 @@
-import formatString from '@visue/core/utils/string/format';
 import useStringAnimation from '@visue/react-core/hooks/useStringAnimation';
+import formatString from '@visue/utils/string/format';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, useMemo } from 'react';
 

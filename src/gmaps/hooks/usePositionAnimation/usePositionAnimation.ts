@@ -1,8 +1,8 @@
-import getDiff2D from '@visue/core/utils/coord/getDiff2D';
 import useValueAnimation, {
   UseValueAnimationOptions,
   UseValueAnimationState,
 } from '@visue/react-core/hooks/useValueAnimation';
+import getDiff2D from '@visue/utils/coord/getDiff2D';
 
 import getLat from '../../utils/getLat';
 import getLng from '../../utils/getLng';
@@ -32,10 +32,10 @@ const CALC_VALUE = (
       initialValue,
       { [LAT_KEY]: getLat(value), [LNG_KEY]: getLng(value) },
       {
-        keysX: LNG_KEY,
-        keysY: LAT_KEY,
-        keyX: LNG_KEY,
-        keyY: LAT_KEY,
+        xKeys: LNG_KEY,
+        yKeys: LAT_KEY,
+        xKey: LNG_KEY,
+        yKey: LAT_KEY,
       },
     ),
     progress = state.progress;

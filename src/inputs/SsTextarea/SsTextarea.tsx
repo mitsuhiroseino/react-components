@@ -3,7 +3,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { styled } from '@mui/material/styles';
-import isEmptyValue from '@visue/core/utils/lang/isEmptyValue';
+import isEmptyValue from '@visue/utils/lang/isEmptyValue';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef } from 'react';
 

@@ -1,6 +1,6 @@
-import formatDate from '@visue/core/utils/date/format';
 import useDateAnimation from '@visue/react-core/hooks/useDateAnimation';
 import useForwardedRef from '@visue/react-core/hooks/useForwardedRef';
+import formatDate from '@visue/utils/date/format';
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, useMemo } from 'react';
 

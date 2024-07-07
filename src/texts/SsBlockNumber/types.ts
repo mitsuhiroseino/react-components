@@ -1,4 +1,4 @@
-import { FormatOptions } from '@visue/core/utils/number/format';
+import { FormatOptions } from '@visue/utils/number/format';
 
 import { SsBlockTextProps } from '../SsBlockText';
 

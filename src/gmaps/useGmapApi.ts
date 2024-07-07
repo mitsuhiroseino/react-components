@@ -1,5 +1,5 @@
-import applyIf from '@visue/core/utils/function/applyIf';
 import useForwardedRef from '@visue/react-core/hooks/useForwardedRef';
+import applyIf from '@visue/utils/function/applyIf';
 import { ForwardedRef, MutableRefObject, useCallback } from 'react';
 
 import setRef from '../utils/setRef';

@@ -6,8 +6,8 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
-import asArray from '@visue/core/utils/array/asArray';
 import useOptions from '@visue/react-core/hooks/useOptions';
+import asArray from '@visue/utils/array/asArray';
 import clsx from 'clsx';
 import indexOf from 'lodash/indexOf';
 import isEmpty from 'lodash/isEmpty';
