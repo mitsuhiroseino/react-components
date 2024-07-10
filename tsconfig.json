@@ -21,12 +21,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "typeRoots": ["node_modules/@types"],
-    "strictPropertyInitialization": false,
     "strictNullChecks": false,
-    "noEmit": true,
-    "isolatedModules": true,
-    "resolveJsonModule": true
+    "types": ["jest", "node"],
+    "strictPropertyInitialization": false
   },
   "include": ["./src"],
-  "exclude": ["./src/__stories__"]
+  "exclude": ["./src/__test__"]
 }
