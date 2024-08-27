@@ -7,7 +7,6 @@ export * as files from './files';
 export * as forms from './forms';
 export * as gmaps from './gmaps';
 export * as hocs from './hocs';
-export * as hooks from './hooks';
 export * as icons from './icons';
 export * as inputs from './inputs';
 export * as layouts from './layouts';

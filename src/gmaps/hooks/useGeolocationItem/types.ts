@@ -1,6 +1,6 @@
 import { UseGeolocationOptions } from '@visue/react-core/hooks/useGeolocation';
 
-import { GeolocationItem } from '../../types';
+import { GeolocationItem } from '../../../types';
 
 /**
  * オプション

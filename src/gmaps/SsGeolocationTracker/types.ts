@@ -1,4 +1,4 @@
-import { UseGeolocationItemOptions, UseGeolocationItemResult } from '../../hooks/useGeolocationItem';
+import { UseGeolocationItemOptions, UseGeolocationItemResult } from '../hooks/useGeolocationItem';
 import { SsRouteProps } from '../SsRoute';
 
 export type SsGeolocationTrackerProps = Omit<SsRouteProps, 'getlocationOptions'> & {

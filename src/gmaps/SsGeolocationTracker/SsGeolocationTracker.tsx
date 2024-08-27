@@ -1,9 +1,8 @@
 import applyIf from '@visue/utils/function/applyIf';
 import { forwardRef, useMemo, useState } from 'react';
-
-import { UseGeolocationItemResult } from '../../hooks/useGeolocationItem';
 import SsGeolocation from '../SsGeolocation';
 import SsRoute from '../SsRoute';
+import { UseGeolocationItemResult } from '../hooks/useGeolocationItem';
 import { DISPLAY_NAME } from './constants';
 import { SsGeolocationTrackerProps } from './types';
 

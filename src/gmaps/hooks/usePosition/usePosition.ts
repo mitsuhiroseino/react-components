@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
-
-import toPosition from '../utils/toPosition';
+import toPosition from '../../utils/toPosition';
 
 export default function usePosition(
   lat: number | null | undefined,

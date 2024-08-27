@@ -1,6 +1,6 @@
-import { UseGeolocationItemOptions } from '../../hooks/useGeolocationItem';
 import { GeolocationItem } from '../../types';
 import { SsPositionProps } from '../SsPosition';
+import { UseGeolocationItemOptions } from '../hooks/useGeolocationItem';
 
 /**
  * プロパティ

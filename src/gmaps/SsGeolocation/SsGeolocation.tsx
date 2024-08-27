@@ -1,8 +1,7 @@
 import { useGoogleMap } from '@react-google-maps/api';
 import { forwardRef, useEffect, useRef } from 'react';
-
-import useGeolocationItem from '../../hooks/useGeolocationItem';
 import SsPosition from '../SsPosition';
+import useGeolocationItem from '../hooks/useGeolocationItem';
 import { DISPLAY_NAME } from './constants';
 import { SsGeolocationProps } from './types';
 
