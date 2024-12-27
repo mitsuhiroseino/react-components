@@ -24,9 +24,9 @@ const SsTextarea = forwardRef((props: SsTextareaProps, ref: ForwardedRef<any>) =
   const { id, className, variant, label, InputLabelProps, helperText, FormHelperTextProps, margin, ...rest } = props;
   return (
     <FormControl className={clsx(CLASS_NAME, className)} variant={variant}>
-      {!isEmptyValue(label) ? <InputLabel {...InputLabelProps}>{label}</InputLabel> : null}
+      {!isEmptyValue(label) && <InputLabel {...InputLabelProps}>{label}</InputLabel>}
       <StyledOutlinedInput id={id} inputComponent="textarea" label={label} {...rest} />
-      {!isEmptyValue(helperText) ? <FormHelperText {...FormHelperTextProps}>{helperText}</FormHelperText> : null}
+      {!isEmptyValue(helperText) && <FormHelperText {...FormHelperTextProps}>{helperText}</FormHelperText>}
     </FormControl>
   );
 });
